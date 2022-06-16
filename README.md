@@ -566,13 +566,17 @@ Comparing the training 96 with the training 46 in figure 6.2.2.1, we can see tha
 
 This increment in the training time has been due to a change in the training method. Before the increment, the agents were trained only in the Unity Editor with only one instance executing at the time. To start the training it&#39;s used the command:
 
-**mlagents-learn &quot;configurationFile&quot; –run-id &quot;Name of the training&quot;**
+```
+mlagents-learn <configurationFile> –run-id <Name of the training>
+```
 
 To increment the training time I build the application and get the executable of the Unity game and then run it with no graphics displaying and setting a number of environments. These environments are different instances of the game.
 
 Afterward, to start training we execute the command:
 
-**mlagents-learn &quot;Configuration File&quot; &quot;Path of the executable&quot; –run-id &quot;Name of the training&quot; –no-graphics –num-envs &quot;Number of environments&quot;**
+```
+mlagents-learn <Configuration File> <Path of the executable> –run-id <Name of the training> –no-graphics –num-envs <Number of environments>
+```
 
 In my case, I was executing 16 instances of the executable at the time with no graphics displaying which made the training time goes faster.
 
