@@ -315,6 +315,9 @@ The final video game executable will have two game modes. One is called &quot;Te
 
 And another mode will be &quot;Player Deathmatch&quot; which will be a single agent controlled by a human against a team of trained agents.
 
+![image](https://user-images.githubusercontent.com/104023186/174140355-6a11d5f7-2cdd-4182-b8b5-2cacf319e3a0.png)
+_Figure 4.4._
+
 ## **TRAINING**
 
 Training consists in the periods where the agents are learning, they will be executing in a simulation and try multiple episodes, each episode will be a fight between team vs team, the amount of time a training lasts is up to the user. A step, is one action that the decision component of the agent has chosen. In addition, one basic component the model has is the algorithm it follows, in my project, there are several algorithms applied.
@@ -525,7 +528,7 @@ Then the next steps were to add some obstacles and a navMesh component in the en
 
 When mastered this, I implemented for the first time the MA-POCA algorithm, as the challenge was the same as the previous test, but instead of being only a single agent it already was a team of several agents.
 
-And finally, when mastering this challenge, we introduce the Self-Play component and start training the AI with a Team vs Team competition.
+And finally, when mastering this challenge, we introduce the Self-Play component and start training the AI with a Team vs Team competition, as we can see in figure 4.3.
 
 ### **SELF-PLAY RESULTS**
 
